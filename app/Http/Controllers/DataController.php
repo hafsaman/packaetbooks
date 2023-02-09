@@ -42,5 +42,6 @@ class DataController extends Controller
             'publisher' => $bookdata['publisher'],
         ]);	 
     } 
+    return view('home');
    }
 }

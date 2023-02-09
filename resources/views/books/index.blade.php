@@ -14,6 +14,8 @@
                 </div>
                 <div class="pull-right mb-2">
                     <a class="btn btn-success" href="{{ route('books.create') }}"> Create book</a>
+                    <a class="btn btn-success" href="{{ route('home') }}"> Home</a>
+                   
                 </div>
             </div>
         </div>

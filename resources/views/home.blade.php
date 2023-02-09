@@ -17,7 +17,7 @@
 
 
                     <div class="row mb-3">
-                           <a href="{{ route('books') }}">Add Books</a>
+                           <a href="{{ route('books.index') }}">Add Books</a>
                     </div>
                     <div class="row mb-3">
                         <a href="{{ route('setbooks') }}">Get Books From API </a>

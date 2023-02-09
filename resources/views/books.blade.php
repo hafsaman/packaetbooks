@@ -12,17 +12,19 @@
 <body>
     <div class="container mt-2">
         <div class="row">
-            <div class="col-lg-12 margin-tb">
+            <div class="col-lg-8 margin-tb">
             <form class="form-inline" method="GET">
                 <div class="form-group mb-2">
                     <label for="filter" class="col-sm-2 col-form-label">Search </label>
                     <input type="text" class="form-control" id="search" name="search" placeholder="Title or Author ..." >
                 </div>
                  <input type='button' value='Search' id='but_search'>
- 
-                
-            </form>
                
+            </form>
+  
+            </div>
+            <div class="col-lg-4 margin-tb">
+                 <a  href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline" valign="right">Admin</a>
             </div>
         </div>
 

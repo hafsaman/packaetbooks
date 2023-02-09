@@ -27,8 +27,12 @@ Route::get('/addbooks', [App\Http\Controllers\DataController::class, 'index'])->
 
 
 Auth::routes();
-Route::resource('books', '\App\Http\Controllers\BookController');
 
+Route::group(array('before' => 'auth'), function() {
+
+    Route::resource('/books', '\App\Http\Controllers\BookController');
+
+});
 /*Route::prefix('admin')->namespace('Admin')->group(static function() {
 
     Route::middleware('auth')->group(static function () {

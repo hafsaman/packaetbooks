@@ -24,7 +24,7 @@ class BookController extends Controller
     {
         $books = Books::orderBy('id','desc')->paginate(5);
         
-        return view('books.index')->compact('books');
+        return view('books.index',compact('books'));
         
     }
 
